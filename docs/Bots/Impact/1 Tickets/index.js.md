@@ -56,7 +56,7 @@ const client = new Client({
 This is when I define client for the rest of the bot to get information from discord
 and send messages to the API to respond. 
 
-## Get commands from [./command/*](./commands/)
+## Get commands from ./commands/
 
 ```js linenums="26"
 const commands = []
@@ -85,4 +85,12 @@ for (const folder of commandFolders) {
 }
 ```
 
-asdw
+`commands` is an array defined to keep track of all the registered commands from the ./commands/ directory
+
+`client.commands()` is a function inside of previously defined [client](#defining-client) using discord's slash command function
+
+`foldersPath` defines where to look for the commands
+
+`commandFolders` reads all the files inside `folderPath` disregarding what file it is
+
+`for ...` repeats for every file in `folderPath`
