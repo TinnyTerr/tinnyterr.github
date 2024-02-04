@@ -1,4 +1,4 @@
-# Index.js
+# index.js
 
 ## Packages
 
@@ -14,14 +14,18 @@ const Sentry = require('@sentry/node')
 const { ProfilingIntegration } = require('@sentry/profiling-node') 
 ```
 
-`fs` and `path` will be covered later with examples of their usage
+Line's [1](#__codelineno-0-1) and [2](#__codelineno-0-2): 
+`fs` and `path` will be covered later with examples of their usage.
 
+Line [3](#__codelineno-0-3): 
 `discord.js` is self explanitory, it is one of the discord packages that 
 allow you to communicate with discord and use discord bots.
 
-`config.json` is found [here](./config.json.md)
+Line [4](#__codelineno-0-4): 
+`config.json` is found [here](./config.json.md).
 
-`Sentry` and `Sentry/profiling-node` are monitoring software found [here](https://sentry.io)
+Line's [6](#__codelineno-0-7) and [7](#__codelineno-0-7):
+`Sentry` and `Sentry/profiling-node` are monitoring software found [here](https://sentry.io).
 
 ## [Optional] Sentry Monitoring
 
@@ -85,12 +89,39 @@ for (const folder of commandFolders) {
 }
 ```
 
-`commands` is an array defined to keep track of all the registered commands from the ./commands/ directory
+Line [26](#__highlightcodelineno-3-26): 
+`commands` is an array defined to keep track of all the registered commands from the ./commands/ directory.
 
-`client.commands()` is a function inside of previously defined [client](#defining-client) using discord's slash command function
+Line [28](#__codelineno-3-28): 
+`client.commands()` is a function inside of previously defined [client](#defining-client) using discord's slash command function.
 
-`foldersPath` defines where to look for the commands
+Line [29](#__codelineno-3-29): 
+`foldersPath` defines where to look for the commands.
 
-`commandFolders` reads all the files inside `folderPath` disregarding what file it is
+Line [30](#__codelineno-3-30): 
+`commandFolders` reads all the files inside `folderPath` disregarding what file it is.
 
-`for ...` repeats for every file in `folderPath`
+Line [32](#__codelineno-3-32): 
+`for ...` repeats for every file in `folderPath`.
+
+Line [33](#__codelineno-3-33) to line [34](#__codelineno-3-34): 
+`commandsPath` and `commandFiles` read the VALID files defined in `foldersPath`. 
+
+Line [35](#__codelineno-3-35): 
+`for ...` repeats for every VALID command file.
+
+Line [37](#__codelineno-3-37): 
+`console.log` for debugging if errors arise.
+
+Line [38](#__codelineno-3-38) to line [39](#__codelineno-3-39): 
+Converts all commands and adds them to a json entry then makes the data within the commands accessible.
+
+Line [40](#__codelineno-3-40): 
+Check to make sure that commands are structured correctly
+See [commands](./commands/index.md).
+
+Line [41](#__codelineno-3-41) to line [43](#__codelineno-3-43): 
+These lines add the commands to the defined array, add them to `client.commands` collection and make them usable through discord
+
+Line [44](#__codelineno-3-44) to line [46](#__codelineno-3-46): 
+Catching errors where command files are not populated with correct data

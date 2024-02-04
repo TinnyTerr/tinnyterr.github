@@ -12,12 +12,9 @@ theme:
     - content.code.annotation
     - content.code.copy
   language: en
-  palette:
-    - scheme: default
-      primary: teal
-      accent: purple 
 
 plugins:
+  - search
   - social
 
 markdown_extensions:
