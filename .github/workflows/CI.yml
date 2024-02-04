@@ -26,5 +26,13 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material 
-      - run: mkdocs get-deps
+      - run: "
+          deps=\"$(mkdocs get-deps)\"
+
+          while IFS= read -r line; do
+            command=\"pip install $line\"
+            echo $command
+            eval $command
+          done <<< \"$deps\" "
+
       - run: mkdocs gh-deploy --force
