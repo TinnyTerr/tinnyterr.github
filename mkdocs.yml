@@ -1,5 +1,7 @@
 site_name: My Docs
 theme:
+  palette:
+    scheme: slate
   name: material
   features:
     - navigation.tabs

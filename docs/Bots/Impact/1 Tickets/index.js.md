@@ -125,3 +125,25 @@ These lines add the commands to the defined array, add them to `client.commands`
 
 Line [44](#__codelineno-3-44) to line [46](#__codelineno-3-46): 
 Catching errors where command files are not populated with correct data
+
+## Deploying Commands
+
+``` javascript linenums="52"
+const rest = new REST().setToken(token);
+
+(async () => {
+	try {
+		console.log(`Started refreshing ${commands.length} application (/) commands.`);
+
+		const data = await rest.put(
+			Routes.applicationCommands(clientId),
+			{ body: commands },
+		);
+
+		console.log(`Successfully reloaded ${data.length} application (/) commands`)
+	} catch (error) {
+		console.error(error);
+		throw(error)
+	}
+})();
+```

@@ -1,4 +1,4 @@
-# Tickets
+# Information
 
 ---
 Defining information:
