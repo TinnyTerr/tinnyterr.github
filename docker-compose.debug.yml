@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tinnyterrgithub:
+    image: tinnyterrgithub
+    build:
+      context: .
+      dockerfile: ./Dockerfile
