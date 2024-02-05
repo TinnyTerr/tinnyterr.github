@@ -1,5 +1,5 @@
 {
     "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
     "files.autoSave": "onFocusChange",
-    "editor.fontSize": 16
+    "editor.fontSize": 14
 }
