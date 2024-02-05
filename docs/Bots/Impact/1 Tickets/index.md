@@ -22,5 +22,12 @@ and thumbnails for videos.
 
 They are found [here](https://discord.gg/ihp)
 
-## Filepath
+## Prerequisites
 
+- Node
+
+- NPM
+
+- Discord.js
+
+- Sentry [Optional]
