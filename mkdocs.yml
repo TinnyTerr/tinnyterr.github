@@ -26,6 +26,8 @@ theme:
 repo_url: https://github.com/squidfunk/mkdocs-material
 
 plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
   - search
   - social
 
