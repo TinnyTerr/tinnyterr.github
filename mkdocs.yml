@@ -23,11 +23,13 @@ theme:
     - content.code.copy
   language: en
 
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_url: https://github.com/tinnyterr/tinnyterr.github.io
 
 plugins:
+  - git-authors
   - git-revision-date-localized:
       enable_creation_date: true
+      type: timeago
   - search
   - social
 
