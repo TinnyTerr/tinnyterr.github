@@ -14,7 +14,7 @@ const Sentry = require('@sentry/node')
 const { ProfilingIntegration } = require('@sentry/profiling-node') 
 ```
 
-Line's [1](#__codelineno-0-1) and [2](#__codelineno-0-2):** 
+**Line [1](#__codelineno-0-1) and line [2](#__codelineno-0-2):** 
 `fs` and `path` will be covered later with examples of their usage.
 
 **Line [3](#__codelineno-0-3):** 
@@ -24,7 +24,7 @@ allow you to communicate with discord and use discord bots.
 **Line [4](#__codelineno-0-4):** 
 `config.json` is found [here](./config.json.md).
 
-Line's [6](#__codelineno-0-7) and [7](#__codelineno-0-7):**
+**Line's [6](#__codelineno-0-7) and [7](#__codelineno-0-7):**
 `Sentry` and `Sentry/profiling-node` are monitoring software found [here](https://sentry.io).
 
 ## [Optional] Sentry Monitoring
@@ -177,7 +177,7 @@ for (const file of eventFiles) {
 client.login(token);
 ```
 
-**This is the same as command registering but edited for events**
+**This is the same as [command registering](#get-commands-from-commands) but edited for events**
 
 Events being:
 
