@@ -13,3 +13,9 @@ For security issues, look at
 SECURITY.md on the github page
 found [here](https://github.com/TinnyTerr/tinnyterr.github.io)
 or create a security advisor
+
+### Owners:
+Discord - https://amitermed.com/6pK5tQ 
+Twitch - https://amitermed.com/m5zUSQ
+Github - https://amitermed.com/KjkYZA
+
